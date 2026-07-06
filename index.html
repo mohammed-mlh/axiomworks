@@ -3,139 +3,182 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AxiomWorks - App Hub</title>
+  <title>AxiomWorks - Mobile Game Studio & Legal Hub</title>
   <link rel="stylesheet" href="style.css">
-  <style>
-    .app-grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 24px;
-      margin-top: 32px;
-    }
-
-    @media (min-width: 640px) {
-      .app-grid {
-        grid-template-columns: 1fr 1fr;
-      }
-    }
-
-    .app-card {
-      background-color: var(--bg-card);
-      border: 1px solid var(--border-color);
-      border-radius: var(--border-radius);
-      padding: 32px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      transition: var(--transition);
-      text-decoration: none !important;
-    }
-
-    .app-card:hover {
-      border-color: var(--accent-color);
-      transform: translateY(-4px);
-      box-shadow: var(--shadow-lg);
-    }
-
-    .app-card-icon {
-      width: 72px;
-      height: 72px;
-      border-radius: var(--border-radius);
-      background: linear-gradient(135deg, var(--accent-color), var(--accent-hover));
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #ffffff;
-      font-size: 32px;
-      font-weight: 700;
-      margin-bottom: 20px;
-      box-shadow: var(--shadow-sm);
-    }
-
-    .app-card-name {
-      font-size: 1.5rem;
-      font-weight: 700;
-      color: var(--text-primary);
-      margin-bottom: 8px;
-    }
-
-    .app-card-desc {
-      font-size: 0.95rem;
-      color: var(--text-secondary);
-      margin-bottom: 20px;
-      flex-grow: 1;
-    }
-
-    .app-card-links {
-      display: flex;
-      gap: 12px;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-
-    .app-card-link {
-      font-size: 0.85rem;
-      font-weight: 600;
-      padding: 6px 12px;
-      background-color: var(--bg-secondary);
-      border-radius: var(--border-radius-sm);
-      color: var(--text-primary);
-      transition: var(--transition);
-      border: 1px solid var(--border-color);
-    }
-
-    .app-card-link:hover {
-      background-color: var(--accent-light);
-      color: var(--accent-color);
-      border-color: var(--accent-color);
-      text-decoration: none;
-    }
-  </style>
 </head>
 <body>
+  <!-- Background Glow FX -->
+  <div class="bg-glow-orb"></div>
+
+  <!-- Sticky Navbar -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <a href="index.html" class="nav-brand">
+        <img src="assets/imgs/axiomworks-icon.png" alt="AxiomWorks Icon" class="nav-logo-img">
+        <span class="nav-brand-title">AxiomWorks</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#about" class="nav-link">About Studio</a></li>
+        <li><a href="#apps" class="nav-link">Our Games</a></li>
+        <li><a href="#contact" class="nav-link">Support</a></li>
+      </ul>
+    </div>
+  </nav>
+
   <div class="container">
-    <header class="app-header">
-      <div class="app-icon" style="background: linear-gradient(135deg, #1e293b, #0f172a);">AW</div>
-      <h1 class="app-name">AxiomWorks</h1>
-      <p class="app-tagline">Legal center and customer support portals for our launched mobile applications.</p>
+    <!-- Studio Hero Section -->
+    <header class="hero-section">
+      <div class="section-pill">
+        <span>✨ Independent Mobile Game Studio</span>
+      </div>
+      <h1 class="hero-title">
+        Crafting Next-Gen <span class="hero-title-highlight">Mobile Experiences</span>
+      </h1>
+      <p class="hero-description">
+        AxiomWorks is an independent mobile game studio dedicated to creating fun, engaging, and polished interactive experiences enjoyed by players around the world.
+      </p>
+      
+      <div class="hero-actions">
+        <a href="#apps" class="btn">Explore Our Games</a>
+        <a href="#about" class="btn btn-secondary">Learn About Studio</a>
+      </div>
     </header>
 
-    <main class="card">
-      <h2>Our Applications</h2>
-      <p>Select an application below to access its support portal, privacy policy, and terms of service.</p>
+    <!-- About AxiomWorks Studio Section -->
+    <section class="section" id="about">
+      <div class="section-header">
+        <div class="section-pill">Why AxiomWorks</div>
+        <h2 class="section-title">Built for Mobile Gamers</h2>
+        <p class="section-subtitle">
+          We focus on intuitive mechanics, crisp presentation, and respectful privacy standards to deliver high-quality entertainment.
+        </p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon-wrapper">🎮</div>
+          <h3>Player-First Design</h3>
+          <p>
+            Every quiz, puzzle, and interaction is designed to be instantly intuitive, highly engaging, and smooth on any mobile device.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon-wrapper">🔒</div>
+          <h3>Data Privacy First</h3>
+          <p>
+            We prioritize user trust with transparent privacy policies, zero invasive tracking, and full legal compliance.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon-wrapper">🚀</div>
+          <h3>Continuous Updates</h3>
+          <p>
+            Our games are continuously expanded with fresh levels, daily challenges, new content packs, and performance enhancements.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Applications Section -->
+    <section class="section" id="apps">
+      <div class="section-header">
+        <div class="section-pill">Game Portfolio</div>
+        <h2 class="section-title">Our Mobile Games</h2>
+        <p class="section-subtitle">
+          Explore our titles below to play, access customer support, or review privacy and terms documents.
+        </p>
+      </div>
 
       <div class="app-grid">
         <!-- VibeTest App Card -->
-        <a href="vibetest/index.html" class="app-card">
-          <img src="vibetest/icon.png" alt="VibeTest Icon" class="app-card-icon" style="background: none; padding: 0; object-fit: cover;">
-          <div class="app-card-name">VibeTest</div>
-          <p class="app-card-desc">Sync your energy and test your vibes with friends in real-time.</p>
-          <div class="app-card-links">
-            <span class="app-card-link">Support &amp; Contact</span>
-            <span class="app-card-link">Privacy Policy</span>
-            <span class="app-card-link">Terms of Service</span>
+        <div class="app-card">
+          <div class="app-card-header">
+            <img src="vibetest/icon.png" alt="VibeTest Icon" class="app-card-icon" style="width: 64px; height: 64px; max-width: 64px; max-height: 64px; object-fit: cover; flex-shrink: 0;">
+            <div class="app-card-info">
+              <span class="app-genre-tag">Party &amp; Social</span>
+              <h3 class="app-card-name">VibeTest</h3>
+            </div>
           </div>
-        </a>
+          <p class="app-card-desc">Sync your energy and test your vibes with friends in real-time quiz challenges.</p>
+          <div class="app-card-footer">
+            <a href="vibetest/index.html" class="app-card-main-btn">View Support Hub &rarr;</a>
+            <div class="app-card-sublinks">
+              <a href="vibetest/privacy.html">Privacy Policy</a>
+              <span>&middot;</span>
+              <a href="vibetest/terms.html">Terms of Service</a>
+            </div>
+          </div>
+        </div>
 
         <!-- Movie Emoji Quiz App Card -->
-        <a href="movie-emoji-quiz/index.html" class="app-card">
-          <img src="movie-emoji-quiz/icon.png" alt="Movie Emoji Quiz Icon" class="app-card-icon" style="background: none; padding: 0; object-fit: cover;">
-          <div class="app-card-name">Movie Emoji Quiz</div>
-          <p class="app-card-desc">Guess the movie from emojis in a fun film quiz with packs and daily challenges.</p>
-          <div class="app-card-links">
-            <span class="app-card-link">Support &amp; Contact</span>
-            <span class="app-card-link">Privacy Policy</span>
-            <span class="app-card-link">Terms of Service</span>
+        <div class="app-card">
+          <div class="app-card-header">
+            <img src="movie-emoji-quiz/icon.png" alt="Movie Emoji Quiz Icon" class="app-card-icon" style="width: 64px; height: 64px; max-width: 64px; max-height: 64px; object-fit: cover; flex-shrink: 0;">
+            <div class="app-card-info">
+              <span class="app-genre-tag">Film Trivia</span>
+              <h3 class="app-card-name">Movie Emoji Quiz</h3>
+            </div>
           </div>
-        </a>
+          <p class="app-card-desc">Guess popular movies from emojis in a fun film quiz filled with packs and daily challenges.</p>
+          <div class="app-card-footer">
+            <a href="movie-emoji-quiz/index.html" class="app-card-main-btn">View Support Hub &rarr;</a>
+            <div class="app-card-sublinks">
+              <a href="movie-emoji-quiz/privacy.html">Privacy Policy</a>
+              <span>&middot;</span>
+              <a href="movie-emoji-quiz/terms.html">Terms of Service</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Country Flags: Flag Quiz App Card -->
+        <div class="app-card">
+          <div class="app-card-header">
+            <img src="country-flags-quiz/icon.png" alt="Country Flags Icon" class="app-card-icon" style="width: 64px; height: 64px; max-width: 64px; max-height: 64px; object-fit: cover; flex-shrink: 0;">
+            <div class="app-card-info">
+              <span class="app-genre-tag">Geography Quiz</span>
+              <h3 class="app-card-name">Country Flags: Flag Quiz</h3>
+            </div>
+          </div>
+          <p class="app-card-desc">Guess countries from their flags, complete continent challenges, and master world geography.</p>
+          <div class="app-card-footer">
+            <a href="country-flags-quiz/index.html" class="app-card-main-btn">View Support Hub &rarr;</a>
+            <div class="app-card-sublinks">
+              <a href="country-flags-quiz/privacy.html">Privacy Policy</a>
+              <span>&middot;</span>
+              <a href="country-flags-quiz/terms.html">Terms of Service</a>
+            </div>
+          </div>
+        </div>
       </div>
-    </main>
+    </section>
+
+    <!-- Studio Contact & Support CTA Banner -->
+    <section class="section" id="contact">
+      <div class="cta-banner">
+        <h2 class="cta-title">Need Support or Have Feedback?</h2>
+        <p class="cta-subtitle">
+          Our dedicated team is here to assist with player accounts, technical inquiries, or feature suggestions.
+        </p>
+        <div class="cta-actions">
+          <a href="country-flags-quiz/contact.html" class="btn">Contact Support Team</a>
+          <a href="mailto:mr.mallahi.mohammed@gmail.com" class="btn btn-secondary">Direct Email Inquiries</a>
+        </div>
+      </div>
+    </section>
   </div>
 
   <footer>
-    <div class="footer-logo">AxiomWorks Legal &amp; Support</div>
-    <p>&copy; 2026 AxiomWorks. All rights reserved.</p>
+    <div class="footer-logo">AxiomWorks Mobile Studio</div>
+    <p>
+      <a href="#about">About Us</a> &middot; 
+      <a href="#apps">Games</a> &middot; 
+      <a href="country-flags-quiz/privacy.html">Privacy Policy</a> &middot; 
+      <a href="country-flags-quiz/terms.html">Terms of Service</a> &middot; 
+      <a href="#contact">Contact</a>
+    </p>
+    <p style="margin-top: 12px; font-size: 0.85rem;">&copy; 2026 AxiomWorks. All rights reserved.</p>
   </footer>
 </body>
 </html>
