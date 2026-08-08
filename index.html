@@ -8,9 +8,6 @@
   <link rel="icon" type="image/png" href="assets/imgs/axiomworks-icon.png">
 </head>
 <body>
-  <!-- Background Glow FX -->
-  <div class="bg-glow-orb"></div>
-
   <!-- Sticky Navbar -->
   <nav class="navbar">
     <div class="navbar-container">
@@ -18,11 +15,18 @@
         <img src="assets/imgs/axiomworks-icon.png" alt="AxiomWorks Icon" class="nav-logo-img">
         <span class="nav-brand-title">AxiomWorks</span>
       </a>
-      <ul class="nav-links">
+      <ul class="nav-links" id="nav-links">
         <li><a href="#about" class="nav-link">About Studio</a></li>
         <li><a href="#apps" class="nav-link">Our Games</a></li>
         <li><a href="#contact" class="nav-link">Support</a></li>
       </ul>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
     </div>
   </nav>
 
@@ -30,7 +34,7 @@
     <!-- Studio Hero Section -->
     <header class="hero-section">
       <div class="section-pill">
-        <span>✨ Independent Mobile Game Studio</span>
+        <span>Independent Mobile Game Studio</span>
       </div>
       <h1 class="hero-title">
         Crafting Next-Gen <span class="hero-title-highlight">Mobile Experiences</span>
@@ -57,7 +61,15 @@
 
       <div class="features-grid">
         <div class="feature-card">
-          <div class="feature-icon-wrapper">🎮</div>
+          <div class="feature-icon-wrapper">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="6" y1="11" x2="10" y2="11"></line>
+              <line x1="8" y1="9" x2="8" y2="13"></line>
+              <line x1="15" y1="12" x2="15.01" y2="12"></line>
+              <line x1="18" y1="10" x2="18.01" y2="10"></line>
+              <path d="M17.32 5H6.68a4 4 0 0 0-3.978 3.59c-.006.052-.01.101-.017.152C2.604 9.416 2 14.456 2 16a3 3 0 0 0 3 3c1 0 1.5-.5 2-1l1.414-1.414A2 2 0 0 1 9.828 16h4.344a2 2 0 0 1 1.414.586L17 18c.5.5 1 1 2 1a3 3 0 0 0 3-3c0-1.545-.604-6.584-.685-7.258-.007-.05-.011-.1-.017-.151A4 4 0 0 0 17.32 5z"></path>
+            </svg>
+          </div>
           <h3>Player-First Design</h3>
           <p>
             Every quiz, puzzle, and interaction is designed to be instantly intuitive, highly engaging, and smooth on any mobile device.
@@ -65,7 +77,12 @@
         </div>
 
         <div class="feature-card">
-          <div class="feature-icon-wrapper">🔒</div>
+          <div class="feature-icon-wrapper">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+              <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+            </svg>
+          </div>
           <h3>Data Privacy First</h3>
           <p>
             We prioritize user trust with transparent privacy policies, zero invasive tracking, and full legal compliance.
@@ -73,7 +90,13 @@
         </div>
 
         <div class="feature-card">
-          <div class="feature-icon-wrapper">🚀</div>
+          <div class="feature-icon-wrapper">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="23 4 23 10 17 10"></polyline>
+              <polyline points="1 20 1 14 7 14"></polyline>
+              <path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"></path>
+            </svg>
+          </div>
           <h3>Continuous Updates</h3>
           <p>
             Our games are continuously expanded with fresh levels, daily challenges, new content packs, and performance enhancements.
@@ -244,7 +267,7 @@
         </p>
         <div class="cta-actions">
           <a href="country-flags-quiz/contact.html" class="btn">Contact Support Team</a>
-          <a href="mailto:mr.mallahi.mohammed@gmail.com" class="btn btn-secondary">Direct Email Inquiries</a>
+          <a href="mailto:mallahimohammed1@gmail.com" class="btn btn-secondary">Direct Email Inquiries</a>
         </div>
       </div>
     </section>
@@ -261,5 +284,22 @@
     </p>
     <p style="margin-top: 12px; font-size: 0.85rem;">&copy; 2026 AxiomWorks. All rights reserved.</p>
   </footer>
+
+  <script>
+    const navToggle = document.getElementById('nav-toggle');
+    const navLinks = document.getElementById('nav-links');
+
+    navToggle.addEventListener('click', () => {
+      const isOpen = navLinks.classList.toggle('open');
+      navToggle.setAttribute('aria-expanded', isOpen);
+    });
+
+    navLinks.querySelectorAll('.nav-link').forEach((link) => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('open');
+        navToggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+  </script>
 </body>
 </html>
