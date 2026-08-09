@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Compress Image: Reduce Size - App Center</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Download badges */
+    .download-badges {
+      display: flex;
+      justify-content: center;
+      gap: 14px;
+      margin-top: 32px;
+      flex-wrap: wrap;
+    }
+
+    .badge-btn {
+      display: inline-flex;
+      align-items: center;
+      background-color: #16161c;
+      color: #ffffff;
+      border: 1px solid #16161c;
+      border-radius: 8px;
+      padding: 12px 20px;
+      text-decoration: none;
+      transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
+      min-width: 180px;
+      text-align: left;
+      min-height: 52px;
+    }
+
+    .badge-btn:hover {
+      background-color: #2554fb;
+      border-color: #2554fb;
+    }
+
+    .badge-icon {
+      font-size: 28px;
+      margin-right: 12px;
+      display: flex;
+      align-items: center;
+    }
+
+    .badge-icon img { display: block; }
+
+    .badge-text {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .badge-sub {
+      font-size: 0.65rem;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: #a1a1aa;
+    }
+
+    .badge-main {
+      font-size: 1rem;
+      font-weight: 600;
+      color: #ffffff;
+      line-height: 1.2;
+    }
+
+    @media (max-width: 480px) {
+      .badge-btn {
+        width: 100%;
+        max-width: 280px;
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="app-header">
+      <img src="icon.png" alt="App Icon" class="app-icon" style="background: none; object-fit: cover;">
+      <h1 class="app-name">Compress Image: Reduce Size</h1>
+      <p class="app-tagline">Reduce image size offline. Compress JPG, PNG &amp; WebP to any target size.</p>
+
+      <div class="download-badges">
+        <!-- App Store Badge -->
+        <a href="#" class="badge-btn" style="opacity: 0.5; pointer-events: none; cursor: not-allowed;" onclick="return false;">
+          <div class="badge-icon">
+            <img src="../assets/imgs/icons/apple.svg" alt="Apple" width="24" height="24">
+          </div>
+          <div class="badge-text">
+            <span class="badge-sub">Download on the</span>
+            <span class="badge-main">App Store</span>
+          </div>
+        </a>
+
+        <!-- Play Store Badge -->
+        <a href="https://play.google.com/store/apps/details?id=com.axiomworks.imagecompressor" class="badge-btn">
+          <div class="badge-icon">
+            <img src="../assets/imgs/icons/play.svg" alt="Google Play" width="24" height="24">
+          </div>
+          <div class="badge-text">
+            <span class="badge-sub">Get it on</span>
+            <span class="badge-main">Google Play</span>
+          </div>
+        </a>
+      </div>
+    </header>
+
+    <main class="card">
+      <h2>App Legal &amp; Support Portal</h2>
+      <p>Please select a document or service option below regarding your Compress Image: Reduce Size account, data privacy, terms of usage, or contact inquiries.</p>
+
+      <div class="links-grid">
+        <a href="privacy.html" class="link-card">
+          <h3>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+              <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+            </svg>
+            Privacy Policy
+          </h3>
+          <p>Read about what personal information Compress Image: Reduce Size collects, why we collect it, and how we protect your data.</p>
+        </a>
+
+        <a href="terms.html" class="link-card">
+          <h3>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+              <line x1="16" y1="13" x2="8" y2="13"></line>
+              <line x1="16" y1="17" x2="8" y2="17"></line>
+              <polyline points="10 9 9 9 8 9"></polyline>
+            </svg>
+            Terms of Service
+          </h3>
+          <p>Read the terms, licensing agreements, and guidelines for using the Compress Image: Reduce Size application.</p>
+        </a>
+
+        <a href="contact.html" class="link-card" style="grid-column: 1 / -1;">
+          <h3>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+            </svg>
+            Support &amp; Contact
+          </h3>
+          <p>Need help troubleshooting, have a feature suggestion, or have account issues? Submit a support request directly to our team.</p>
+        </a>
+      </div>
+    </main>
+  </div>
+
+  <footer>
+    <div class="footer-logo">Compress Image: Reduce Size Support Center</div>
+    <p>
+      <a href="index.html">Home</a> &middot; 
+      <a href="privacy.html">Privacy Policy</a> &middot; 
+      <a href="terms.html">Terms of Service</a> &middot; 
+      <a href="contact.html">Contact</a>
+    </p>
+    <p style="margin-top: 10px; font-size: 0.8rem;">&copy; 2026 AxiomWorks. All rights reserved.</p>
+  </footer>
+</body>
+</html>
